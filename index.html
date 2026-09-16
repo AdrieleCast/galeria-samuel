@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar ao celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#4f5b43">
+
+    <title>Samuel • 1 ano</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CAPA
+    ====================================================== -->
+
+    <header class="hero">
+
+        <!-- Elementos decorativos -->
+        <span class="decor decor-1">❧</span>
+        <span class="decor decor-2">❧</span>
+        <span class="decor decor-3">❧</span>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                Uma história para guardar
+            </p>
+
+            <h1 id="clientName">
+                Samuel
+            </h1>
+
+            <p class="age" id="clientAge">
+                1 ano
+            </p>
+
+            <p class="hero-text" id="heroText">
+                Um ano de descobertas, sorrisos, abraços e momentos
+                que merecem ser lembrados para sempre.
+            </p>
+
+            <a href="#galeria" class="button">
+                Ver galeria
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             GALERIA
+        ================================================== -->
+
+        <section id="galeria" class="gallery-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Memórias
+                </p>
+
+                <h2>
+                    Galeria
+                </h2>
+
+                <p>
+                    Cada fotografia guarda um pedacinho deste dia.
+                </p>
+
+                <button
+    id="downloadAllBtn"
+    class="download-all-button"
+    type="button"
+    onclick="downloadAllPhotos()"
+>
+    ↓ Baixar todas as fotos
+</button>
+
+            </div>
+
+
+            <!--
+                O JavaScript vai colocar as fotos aqui.
+                Não precisa adicionar as imagens manualmente neste HTML.
+            -->
+
+            <div id="gallery" class="gallery">
+
+                <div class="empty">
+
+                    <strong>
+                        Suas fotos aparecerão aqui.
+                    </strong>
+
+                    <br>
+
+                    Adicione as fotos na pasta
+                    <strong>fotos</strong>.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MENSAGEM PARA A FAMÍLIA
+        ================================================== -->
+
+        <section class="message-section">
+
+            <div class="message-card">
+
+                <span class="star">
+                    ✦
+                </span>
+
+                <h2>
+                    Um ano para celebrar
+                </h2>
+
+                <p id="messageText">
+
+                    Que esta seja apenas a primeira de muitas páginas
+                    de uma história cheia de amor, alegria e momentos
+                    inesquecíveis.
+
+                    Obrigada por me permitir registrar
+                    um pedacinho dessa história.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <strong>
+            Adriele Fotografia
+        </strong>
+
+        <span>
+            Memórias que permanecem
+        </span>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         VISUALIZADOR DAS FOTOS
+         
+         Essa parte fica escondida até a pessoa clicar
+         em uma fotografia.
+    ====================================================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+        aria-hidden="true"
+    >
+
+        <!-- Fechar -->
+        <button
+            id="closeBtn"
+            class="close"
+            aria-label="Fechar foto"
+        >
+            ×
+        </button>
+
+
+        <!-- Foto anterior -->
+        <button
+            id="prevBtn"
+            class="nav prev"
+            aria-label="Foto anterior"
+        >
+            ‹
+        </button>
+
+
+        <!-- =================================================
+             FOTO AMPLIADA
+        ================================================== -->
+
+        <div class="viewer">
+
+            <img
+                id="lightboxImg"
+                src=""
+                alt="Foto ampliada"
+            >
+
+
+            <!-- Barra inferior -->
+            <div class="viewer-bar">
+
+
+                <!-- Contador -->
+                <span id="counter">
+                    1 / 1
+                </span>
+
+
+                <div class="viewer-actions">
+
+                    <!-- Baixar -->
+                    <button
+                        id="downloadBtn"
+                        class="download-button"
+                    >
+                        ↓ Baixar foto
+                    </button>
+
+
+                    <!-- Voltar -->
+                    <button
+                        id="galleryBtn"
+                        class="back-button"
+                    >
+                        Voltar para a galeria
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Foto seguinte -->
+        <button
+            id="nextBtn"
+            class="nav next"
+            aria-label="Próxima foto"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         
+         Vamos criar esse arquivo depois.
+    ====================================================== -->
+    <script src="js/jszip.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+
