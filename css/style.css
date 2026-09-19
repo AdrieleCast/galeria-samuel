@@ -1059,6 +1059,21 @@ footer span {
     transform: translateY(-2px);
 }
 
+/* =========================================================
+   CONTADOR DE FOTOS
+   ========================================================= */
+
+.photo-count {
+    margin: 4px 0 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+
+    font-weight: 400;
+}
 
 /* =========================================================
    20. ANIMAÇÕES
