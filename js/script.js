@@ -992,7 +992,40 @@ galleryBtn.addEventListener(
 );
 
 
+/* =========================================================
+   CONTADOR DE FOTOS
+   ========================================================= */
 
+function atualizarContadorFotos() {
+
+    const contador =
+        document.getElementById("photoCount");
+
+    if (!contador) return;
+
+
+    const quantidade =
+        config.fotos.length;
+
+
+    if (quantidade === 1) {
+
+        contador.textContent =
+            "1 fotografia para guardar esse momento";
+
+    } else {
+
+        contador.textContent =
+            `${quantidade} fotografias para guardar esse momento`;
+
+    }
+
+}
+
+
+/* Atualizar contador */
+
+atualizarContadorFotos();
 
 /* =========================================================
    18. INICIAR GALERIA
