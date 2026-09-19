@@ -41,7 +41,7 @@ const config = {
     /* Texto da capa */
 
     textoInicial:
-        "Disse Samuel: Fala, Senhor, pois teu servo está ouvindo. 1 Samuel 3:9",
+        "Disse Samuel: Fala, Senhor, pois teu servo está ouvindo.  1 Samuel 3:9",
 
 
     /* Mensagem final */
