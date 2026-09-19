@@ -41,7 +41,7 @@ const config = {
     /* Texto da capa */
 
     textoInicial:
-        "Um ano de descobertas, sorrisos, abraços e momentos que merecem ser lembrados para sempre.",
+        ""Disse Samuel: Fala, Senhor, pois teu servo está ouvindo." 1 Samuel 3:9",
 
 
     /* Mensagem final */
