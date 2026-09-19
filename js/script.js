@@ -41,13 +41,13 @@ const config = {
     /* Texto da capa */
 
     textoInicial:
-        "Disse Samuel: Fala, Senhor, pois teu servo está ouvindo.  1 Samuel 3:9",
+        "Um ano de descobertas, sorrisos, abraços e momentos que merecem ser lembrados para sempre.",
 
 
     /* Mensagem final */
 
     mensagem:
-        "Que esta seja apenas a primeira de muitas páginas de uma história cheia de amor, alegria e momentos inesquecíveis. Obrigada por me permitir registrar um pedacinho dessa história.",
+        "Cada sorriso, descoberta e abraço fez parte de um dia especial. Que essas imagens possam trazer de volta a alegria desse momento sempre que forem revisitadas.",
 
 
     /* =====================================================
@@ -991,7 +991,6 @@ galleryBtn.addEventListener(
     
 );
 
-
 /* =========================================================
    CONTADOR DE FOTOS
    ========================================================= */
@@ -1026,6 +1025,7 @@ function atualizarContadorFotos() {
 /* Atualizar contador */
 
 atualizarContadorFotos();
+
 
 /* =========================================================
    18. INICIAR GALERIA
